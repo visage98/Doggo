@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doggo.com | Adoption</title>
+    <link rel="icon" href="images/icon.png">
+    <script src="https://use.fontawesome.com/851450b34b.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand doggo" href="index.html"><span class="d-font">D</span>OGGO.com</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa fa-user-circle " aria-hidden="true"></i>&nbsp;Contact us</a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="donate.html"><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;Donate</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <h1>Dogs for Adoption</h1>
+        </div>
+    </div>
+    <br>
+        <form>
+        <div class="row form-row">
+            <div class="col-lg-2"></div>
+            <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                <select class="custom-select" id="breed" name="breed">
+                    <option selected value="all">All Breed</option>
+                    <option value='boxer'>Boxer</option>
+                    <option value='labrador-retriever'>Labrador Retriever</option>
+                    <option value='mixed-breed'>Mixed Breed</option>
+                    <option value='indian-spitz'>Indian Spitz</option>
+                    <option value='german-shepherd-dog-alsatian'>German Shepherd</option>
+                    <option value='stbernard'>St.Bernard</option>
+                    <option value='pug'>Pug</option>
+                    <option value='beagle'>Beagle</option>
+                    <option value='golden-retriever'>Golden Retriever</option>
+                    <option value='jack-russell-terrier'>Jack Russell Terrier</option>
+                    <option value='indian-mastiff'>Indian Mastiff</option>
+                    <option value='dalmatian'>Dalmatian</option>
+                    <option value='dobermann'>Dobermann</option>
+                    <option value='miniature-pinscher'>Miniature Pinscher</option>
+                    <option value='pomeranian'>Pomeranian</option>
+                </select>
+            </div>
+            <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                <select class="custom-select" id="city" name="city">
+                    <option selected value="all">All City</option>
+                    <option value='New Delhi'>New Delhi</option>
+                    <option value='Gurgaon'>Gurgaon</option>
+                    <option value='Bangalore'>Bangalore</option>
+                    <option value='Mumbai'>Mumbai</option>
+                    <option value='Pune'>Pune</option>
+                    <option value='Hyderabad'>Hyderabad</option>
+                    <option value='Chandigarh'>Chandigarh</option>
+                    <option value='Noida'>Noida</option>
+                    <option value='Dehradun'>Dehradun</option>
+                    <option value='Goa'>Goa</option>
+                </select>
+            </div>
+            <div class="form-group col-lg-2 col-md-6 col-sm-12">
+                <select class="custom-select" id="status" name="status">
+                    <option selected value="all">All Status</option>
+                    <option value='Available'>Available</option>
+                    <option value='Adopted'>Adopted</option>
+                </select>
+            </div>
+            <div class="form-group col-lg-1 col-md-6 col-sm-12">
+                <button type="button" class="btn btn-secondary" id="go">Go</button>
+            </div>
+            <div class="form-group col-lg-1 col-md-12 col-sm-12">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+    </form>
+
+
+    <br>
+    <br>
+
+    <div class="row" id="dog-list">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <a href="#"><h4 id="back-top">Back to top</h4></a>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

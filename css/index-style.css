@@ -1,0 +1,133 @@
+body,html{
+    width:100%;
+    height: 100%;
+    background-color: #383838;
+    background-image: url(../images/back.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-device-width: 480px)
+and (max-device-width: 640px)
+and (orientation: landscape) {
+    body,html{
+        background-image: url(../images/pback.jpg);
+    }
+}
+
+
+/*@media all and (max-device-width: 480px) {*/
+    /*body,html{*/
+        /*background-image: url(../images/pback.jpg);*/
+    /*}*/
+/*}*/
+
+.navbar{
+    font-size: 120%;
+}
+
+.wrapper-outer{
+    display: table;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    /*box-shadow: inset 0px 0px 200px 120px #222222;*/
+}
+
+.wrapper-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1{
+    color: #ea6c11;
+    text-align: center;
+}
+
+.center-text{
+    vertical-align: middle;
+    width:42rem;
+    margin:auto;
+    text-align: center;
+    color:white;
+    font-size: x-large;
+}
+
+.d-font{
+    font-family: myFirstFont,'Monoton', cursive;
+    letter-spacing: -0.4rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.doggo{
+    font-family: 'Monoton', cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/pet.ttf);
+}
+
+.heading{
+    text-align: center;
+    font-family: "Bradley Hand ITC";
+    font-size: 2em;
+    margin-bottom: 2px;
+    text-shadow: 0px 5px 3px black ;
+}
+
+.contact{
+    text-align: center;
+    color: white;
+    background:linear-gradient(45deg, #212121, #616161);
+    position: relative;
+    padding: 10px;
+    margin-left:0;
+    padding-top: 2rem;
+    box-shadow: 0px -15px 50px grey;
+    margin-bottom: 0;
+}
+
+label{
+    color: white;
+}
+.btn-secondary,.custom-select{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.form-row{
+    margin: auto;
+}
+.card-img-top{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.card{
+    width: 20rem;
+    margin: 3rem auto;
+    border: 5px solid gray;
+    padding: 5px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform:  scale(1.1,1.1);
+    transition: 1s;
+}
+
+#back-top{
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 0 -1px 0 black,0 1px 0 black,-1px 0 0 black,1px 0 0 black;
+}
+
+.dog{
+    margin: auto;
+}
